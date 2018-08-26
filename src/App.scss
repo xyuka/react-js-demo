@@ -1,0 +1,124 @@
+.app {
+  margin: 0 auto;
+  max-width: 1024px;
+  .search-bar {
+    margin: 0px auto;
+    width: 300px;
+    height: 50px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+
+    svg {
+      position: absolute;
+      margin-left: 17px;
+      margin-top: 17px;
+      z-index: 1;
+      color: #4f5b66;
+    }
+    input {
+      width: 300px;
+      height: 50px;
+      background: #2b303b;
+      border: none;
+      font-size: 10pt;
+      float: left;
+      color: #63717f;
+      padding-left: 45px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      -webkit-transition: background .55s ease;
+      -moz-transition: background .55s ease;
+      -ms-transition: background .55s ease;
+      -o-transition: background .55s ease;
+      transition: background .55s ease;
+    }
+    input:hover, input:focus, input:active{
+      outline:none;
+      background: #ffffff;
+    }
+  }
+  .app-list {
+    padding-top: 70px;
+
+    .recommend-10 {
+      .recommend-apps-list {
+        color: #736f6f;
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        margin: 0 20px;
+        .recommend-app {
+          width: 110px;
+          .app-image{
+            img {
+              border-radius: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    .top-free-100 {
+      .free-app{
+        border-bottom: 1px solid #e6e2e2;
+        margin: 0 20px;
+        color: #736f6f;
+        padding: 10px 0;
+        .app-number, .app-image, .app-desc-block, .app-name {
+          display: inline-block;
+          vertical-align: middle;
+        }
+        .app-image img {
+          vertical-align: middle;
+        }
+        .app-desc-block {
+          @media screen and (max-width: 500px) {
+            max-width: 220px;
+          }
+        }
+      }
+      .free-app:nth-child(odd) {
+        .app-image{
+          img {
+            border-radius: 20px;
+          }
+        }
+      }
+      .free-app:nth-child(even) {
+        .app-image{
+          img {
+            border-radius: 50px;
+          }
+        }
+      }
+    }
+  }
+  ul {
+    padding: 0;
+  }
+  .black {
+    color: black;
+  }
+  .padding-5 {
+    padding: 5px;
+  }
+  .padding-20 {
+    padding: 20px;
+  }
+  .font-size-14 {
+    font-size: 14px;
+  }
+  .font-size-12 {
+    font-size: 12px;
+  }
+  .font-size-10 {
+    font-size: 10px;
+  }
+  .font-size-20 {
+    font-size: 20px;
+  }
+}
