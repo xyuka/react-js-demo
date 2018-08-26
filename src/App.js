@@ -76,9 +76,9 @@ class App extends Component {
             <div className="recommend-apps-list">
               {this.state.recommendItems && (
                 this.state.recommendItems.map((recommendapp, index) =>
-                  <div className="recommend-app">
+                  <div className="recommend-app" key={index}>
                     <div className="app-image padding-5">
-                      <img src={recommendapp["im:image"][2].label} />
+                      <img src={recommendapp["im:image"][2].label} alt={recommendapp["im:name"].label}/>
                     </div>
                     <div className="app-desc-block padding-5">
                       <div className="app-name black font-size-12">{recommendapp["im:name"].label}</div>
@@ -93,12 +93,12 @@ class App extends Component {
             <ul>
               {this.state.topfreeItems && (
                 this.state.topfreeItems.map((freeapp, index) =>
-                  <LazyLoad height={200} offset={100}
+                  <LazyLoad height={200} offset={100} key={index}
                   >
                     <div className="free-app">
                       <div className="app-number padding-5">{index + 1}</div>
                       <div className="app-image padding-5">
-                        <img src={freeapp["im:image"][2].label} />
+                        <img src={freeapp["im:image"][2].label} alt={freeapp["im:name"].label}/>
                       </div>
                       <div className="app-desc-block padding-5">
                         <div className="app-name black font-size-14">{freeapp["im:name"].label}</div>
