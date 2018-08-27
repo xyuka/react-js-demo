@@ -36,6 +36,10 @@
       -ms-transition: background .55s ease;
       -o-transition: background .55s ease;
       transition: background .55s ease;
+
+      @media screen and (max-width: 500px) {
+        width: 79%;
+      }
     }
     input:hover, input:focus, input:active{
       outline:none;
@@ -77,10 +81,13 @@
         }
         .app-image img {
           vertical-align: middle;
+          @media screen and (max-width: 500px) {
+            width: 80px;
+          }
         }
         .app-desc-block {
           @media screen and (max-width: 500px) {
-            max-width: 200px;
+            max-width: 130px;
           }
         }
       }
