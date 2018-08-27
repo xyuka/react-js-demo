@@ -10,10 +10,10 @@ and then
 Suppose it is already supporting offline as service worker, manifest is built when running production build.
 
 Run this command to create build folder
-###`npm run build`
+### `npm run build`
 
 In case you don't have a static server run below command to install it
-###`npm install -g serve`
+### `npm install -g serve`
 
 and then you can run the static server by following command
-###`serve -s build`
+### `serve -s build`
