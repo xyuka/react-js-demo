@@ -10,6 +10,7 @@
     width: 100%;
     padding: 10px;
     background-color: white;
+    z-index: 1000;
 
     svg {
       position: absolute;
@@ -79,18 +80,18 @@
         }
         .app-desc-block {
           @media screen and (max-width: 500px) {
-            max-width: 220px;
+            max-width: 200px;
           }
         }
       }
-      .free-app:nth-child(odd) {
+      div:nth-child(odd) {
         .app-image{
           img {
             border-radius: 20px;
           }
         }
       }
-      .free-app:nth-child(even) {
+      div:nth-child(even) {
         .app-image{
           img {
             border-radius: 50px;
@@ -101,6 +102,9 @@
   }
   ul {
     padding: 0;
+  }
+  ul > div {
+    display: block !important;
   }
   .black {
     color: black;
