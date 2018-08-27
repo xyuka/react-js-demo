@@ -1,6 +1,5 @@
 import './App.scss';
 import React, { Component } from 'react';
-import LazyLoad from 'react-lazyload';
 import FadeIn from 'react-lazyload-fadein';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
